@@ -61,7 +61,7 @@ public class CountryResolverProcessor extends AbstractProcessor {
         String simpleClassName = className.substring(lastDot + 1);
         String resolverClassName = simpleClassName + "Resolver";
 
-        JavaFileObject builderFile = processingEnv.getFiler().createSourceFile(resolverClassName);
+        JavaFileObject builderFile = processingEnv.getFiler().createSourceFile(packageName + "." + resolverClassName);
         try (PrintWriter out = new PrintWriter(builderFile.openWriter())) {
 
             if (packageName != null) {

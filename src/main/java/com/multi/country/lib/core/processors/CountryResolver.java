@@ -12,7 +12,7 @@ import java.util.stream.Collectors;
 
 public class CountryResolver<T> {
 
-    private static final String DEFAULT_COUNTRY_CODE = "international";
+    private static final String DEFAULT_COUNTRY_CODE = "all";
 
     private final Map<String, T> beansByCountry;
 
