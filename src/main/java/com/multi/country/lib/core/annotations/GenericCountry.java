@@ -7,6 +7,6 @@ import java.lang.annotation.Target;
 
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.TYPE)
-@Country("en")
-public @interface EN {
+@Country
+public @interface GenericCountry {
 }
